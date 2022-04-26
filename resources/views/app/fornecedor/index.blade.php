@@ -7,6 +7,9 @@
     <br />
     @isset($fornecedores[0]['cnpj'])
         CNPJ: {{ $fornecedores[0]['cnpj'] }}
+        @empty($fornecedores[0]['cnpj'])
+            - Vazio
+        @endempty
     @endisset
     <br /><br />
 
@@ -16,6 +19,9 @@
     <br />
     @isset($fornecedores[1]['cnpj'])
         CNPJ: {{ $fornecedores[1]['cnpj'] }}
+        @empty($fornecedores[1]['cnpj'])
+            - Vazio
+        @endempty
     @endisset
     <br /><br />
 @endisset
